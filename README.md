@@ -1,5 +1,5 @@
 [![npm](https://img.shields.io/npm/v/seng-scss.svg?maxAge=2592000)](https://www.npmjs.com/package/seng-scss)
-[![npm](https://img.shields.io/npm/dm/seng-scss.svg?maxAge=2592000)](https://www.npmjs.com/package/seng-scss
+[![npm](https://img.shields.io/npm/dm/seng-scss.svg?maxAge=2592000)](https://www.npmjs.com/package/seng-scss)
 
 # seng-scss
 
