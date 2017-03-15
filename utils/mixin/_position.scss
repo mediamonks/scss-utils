@@ -48,13 +48,3 @@
 	}
 
 }
-
-/**
- * Offset
- * @param {number} $top (0) - Top Offset
- * @param {number} $left (0) - Left Offset
- */
-@mixin offset($x: 0, $y: 0) {
-	top: $y;
-	left: $x;
-}

@@ -1,6 +1,6 @@
 {
   "name": "seng-scss",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "SCSS library of mixins and functions that are used within projects",
   "main": "base.scss",
   "author": "René Drieënhuizen <rene@mediamonks.com> (https://github.com/ReneDrie)",
@@ -19,7 +19,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mediamonks/seng-scss.git"
-  },
-  "devDependencies": {},
-  "dependencies": {}
+  }
 }
