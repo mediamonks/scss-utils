@@ -1,0 +1,12 @@
+/**
+ * Set pseudo elements styles that are used mostly (content, display, position)
+ *
+ * @param {display} $display (block)
+ * @param {position} $position (absolute)
+ * @param {string} $content ('')
+ */
+@mixin pseudo($display: block, $position: absolute, $content: '') {
+	content: $content;
+	display: $display;
+	position: $position;
+}

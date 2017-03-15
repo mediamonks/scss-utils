@@ -1,0 +1,18 @@
+/**
+ * Aspect ratio, create a :before pseudo element for setting an aspect ratio on an element
+ *
+ * @param {number} $width (1) - Percentage width
+ * @param {number} $height ($width) - Percentage height
+ * @param {boolean} $relative (true) - Add relative position to element
+ */
+@mixin aspect-ratio($width: 1, $height: $width, $relative: true) {
+	@if ($relative == true) {
+		position: relative;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		padding-top: unquote(($height / $width) * 100 + '%');
+	}
+}

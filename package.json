@@ -1,0 +1,25 @@
+{
+  "name": "seng-scss",
+  "version": "0.0.1",
+  "description": "SCSS library of mixins and functions that are used within projects",
+  "main": "base.scss",
+  "author": "René Drieënhuizen <rene@mediamonks.com> (https://github.com/ReneDrie)",
+  "homepage": "https://www.mediamonks.com/",
+  "license": "MIT",
+  "keywords": [
+    "seng",
+    "mediamonks",
+    "scss",
+    "mixins",
+    "functions"
+  ],
+  "bugs": {
+    "url": "https://github.com/mediamonks/seng-scss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mediamonks/seng-scss.git"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

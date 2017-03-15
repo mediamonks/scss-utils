@@ -1,0 +1,10 @@
+/**
+ * Simple image replacement mixin for not displaying content within an element
+ */
+@mixin ir {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}

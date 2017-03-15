@@ -1,0 +1,15 @@
+# .gitignore
+.idea
+node_modules
+.sass-cache
+.DS_Store
+npm-debug.log
+/seng-*.zip
+/seng-*.tar.gz
+
+# .npmignore
+.editorconfig
+.gitignore
+.travis.yml
+CONTRIBUTING.md
+AUTHORS.md
