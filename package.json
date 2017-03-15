@@ -13,6 +13,9 @@
     "mixins",
     "functions"
   ],
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
   "bugs": {
     "url": "https://github.com/mediamonks/seng-scss/issues"
   },
