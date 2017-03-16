@@ -38,41 +38,41 @@ npm i -S seng-scss
 ### Variables
 
 - [variables](./utils/_variables.scss)
-	- $pathAsset: default project asset path (..)
-	- $pathFont: default project font path (font, prefixed with $pathAsset)
-	- $pathImage: default project image path (image, prefixed with $pathAsset)
-	- $zLayout: default list of zIndex names (default)
-	- $mediaQueries: default list of mediaQueries (empty list)
-	- $ease{name}: List of easing bezier curves
-		- $easeLinear
-        - $ease
-        - $easeIn
-        - $easeOut
-        - $easeInOut
-        - $easeInQuad
-        - $easeOutQuad
-        - $easeInCubic
-        - $easeOutCubic
-        - $easeInQuart
-        - $easeOutQuart
-        - $easeInQuint
-        - $easeOutQuint
-        - $easeInSine
-        - $easeOutSine
-        - $easeInExpo
-        - $easeOutExpo
-        - $easeInCirc
-        - $easeOutCirc
-        - $easeInBack
-        - $easeOutBack
-        - $easeInOutQuad
-        - $easeInOutCubic
-        - $easeInOutQuart
-        - $easeInOutQuint
-        - $easeInOutSine
-        - $easeInOutExpo
-        - $easeInOutCirc
-        - $easeInOutBack
+	- **$pathAsset**: default project asset path (..)
+	- **$pathFont**: default project font path (font, prefixed with $pathAsset)
+	- **$pathImage**: default project image path (image, prefixed with $pathAsset)
+	- **$zLayout**: default list of zIndex names (default)**
+	- **$mediaQueries**: default list of mediaQueries (empty list)
+	- **$ease{name}**: List of easing bezier curves
+		- **$easeLinear**
+        - **$ease**
+        - **$easeIn**
+        - **$easeOut**
+        - **$easeInOut**
+        - **$easeInQuad**
+        - **$easeOutQuad**
+        - **$easeInCubic**
+        - **$easeOutCubic**
+        - **$easeInQuart**
+        - **$easeOutQuart**
+        - **$easeInQuint**
+        - **$easeOutQuint**
+        - **$easeInSine**
+        - **$easeOutSine**
+        - **$easeInExpo**
+        - **$easeOutExpo**
+        - **$easeInCirc**
+        - **$easeOutCirc**
+        - **$easeInBack**
+        - **$easeOutBack**
+        - **$easeInOutQuad**
+        - **$easeInOutCubic**
+        - **$easeInOutQuart**
+        - **$easeInOutQuint**
+        - **$easeInOutSine**
+        - **$easeInOutExpo**
+        - **$easeInOutCirc**
+        - **$easeInOutBack**
 
 
 ## Contribute
