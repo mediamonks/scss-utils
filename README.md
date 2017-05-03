@@ -34,6 +34,8 @@ npm i -S seng-scss
 
 - [asset / image / font](./utils/function/_asset.scss)
 - [index](./utils/function/_zindex.scss)
+- [em-size](./utils/function/_em-size.scss)
+- [font-weight](./utils/function/_font-weight.scss)
 
 ### Variables
 

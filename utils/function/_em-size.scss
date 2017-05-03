@@ -1,0 +1,11 @@
+/**
+ * Get EM size of a value based on a base size
+ *
+ * @param {Number} $value - The value you need the EM value from
+ * @param {Number} $base - The base value where the $value is calculated upon
+ *
+ * @return {EM Value} - The EM value based on $value and $base
+ */
+@function em-size($value, $base) {
+	@return ($value / $base) * 1em;
+}

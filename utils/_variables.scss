@@ -9,6 +9,16 @@ $zLayout: default !default;
 // Breakpoints
 $mediaQueries: () !default;
 
+// Font Weights
+$fontWeight: (
+	light: 100,
+	normal: 400,
+	medium: 500,
+	semibold: 600,
+	bold: 700,
+	black: 900,
+) !default;
+
 // Easings
 $easeLinear:        linear;
 $ease:              ease;
