@@ -8,5 +8,8 @@
 		@media #{map-get($mediaQueries, $name)} {
 			@content;
 		}
+	} @else {
+    	@error "MediaQuery #{$name} does not exist";
 	}
+  }
 }
