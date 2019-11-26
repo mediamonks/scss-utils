@@ -9,7 +9,6 @@
 			@content;
 		}
 	} @else {
-    	@error "MediaQuery #{$name} does not exist";
+		@error "MediaQuery #{$name} does not exist";
 	}
-  }
 }
