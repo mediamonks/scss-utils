@@ -1,0 +1,22 @@
+$logicalPropertyMap: (
+	top: block-start,
+	bottom: block-end,
+	left: inline-start,
+	right: inline-end,
+	width: inline-size,
+	height: block-size,
+);
+
+@function get-logical-property($property: top) {
+	@if $useLogicalProperties {
+		@if map_has_key($logicalPropertyMap, $property) {
+			@return map_get($logicalPropertyMap, $property);
+		} @else {
+			@warn 'No logical proparty with #{$property} has been found';
+			@return $property;
+		}
+	}
+	@else {
+		@return $property;
+	}
+}

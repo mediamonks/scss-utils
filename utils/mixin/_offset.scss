@@ -5,6 +5,11 @@
  * @param {number} $left (0) - Left Offset
  */
 @mixin offset($x: 0, $y: 0) {
-	top: $y;
-	left: $x;
+	@if $useLogicalProperties and $hasLogicalPositionSupport {
+		inset-#{get-logical-property(top)}: $y;
+		inset-#{get-logical-property(left)}: $x;
+	} @else {
+		top: $y;
+		left: $x;
+	}
 }

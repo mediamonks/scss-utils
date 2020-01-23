@@ -36,6 +36,7 @@ npm i -S seng-scss
 - [index](./utils/function/_zindex.scss)
 - [em-size](./utils/function/_em-size.scss)
 - [font-weight](./utils/function/_font-weight.scss)
+- [get-logical-property](./utils/function/_get-logical-property.scss)
 
 ### Variables
 
@@ -75,6 +76,8 @@ npm i -S seng-scss
         - **$easeInOutExpo**
         - **$easeInOutCirc**
         - **$easeInOutBack**
+    - **$useLogicalProperties**: sets support for default logical properties (true)
+    - **$hasLogicalPositionSupport**: sets support for "position" logical properties (top, right, bottom, left) (false)
 
 
 ## Contribute

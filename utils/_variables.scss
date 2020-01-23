@@ -49,3 +49,7 @@ $easeInOutSine:     cubic-bezier(0.445, 0.050, 0.550, 0.950);
 $easeInOutExpo:     cubic-bezier(1.000, 0.000, 0.000, 1.000);
 $easeInOutCirc:     cubic-bezier(0.785, 0.135, 0.150, 0.860);
 $easeInOutBack:     cubic-bezier(0.680, -0.550, 0.265, 1.550);
+
+// Logical properties
+$useLogicalProperties: true !default;
+$hasLogicalPositionSupport: true !default;
