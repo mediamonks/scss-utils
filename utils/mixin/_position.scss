@@ -21,8 +21,11 @@
 	}
 	@else
 	{
-		$values: (nth($args, 1), nth($args, 1), nth($args, 1), nth($args, 1));
-		@if ($argsLength == 2) {
+		$values: ($args, $args, $args, $args);
+		@if ($argsLength == 1) {
+			$values: ($args, $args, $args, $args);
+		}
+		@else if ($argsLength == 2) {
 			$values: (nth($args, 1), nth($args, 2), nth($args, 1), nth($args, 2));
 		}
 		@else if ($argsLength == 3) {
