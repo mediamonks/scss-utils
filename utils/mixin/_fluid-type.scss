@@ -1,0 +1,35 @@
+/**
+ * Uses the viewport width to define the font size with a min/max font-size.
+ * Has a linear interpolation for the font size between the minumum and maximum viewport
+ *
+ * @param {number} $min-font-size - Minimum font-size
+ * @param {number} $max-font-size - Maximum font-size
+ * @param {number} $min-vw ($width) - Minimum viewport width
+ * @param {number} $max-vw ($width) - Maximum viewport width
+ */
+@mixin fluid-type(
+	$min-font-size,
+	$max-font-size,
+	$min-vw: $minimumFluidTypeViewportWidth,
+	$max-vw: $maximumFluidTypeViewportWidth
+) {
+	$u1: unit($min-vw);
+	$u2: unit($max-vw);
+	$u3: unit($min-font-size);
+	$u4: unit($max-font-size);
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			font-size: $min-font-size;
+			@media screen and (min-width: $min-vw) {
+				font-size: calc(
+					#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+					((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+				);
+			}
+			@media screen and (min-width: $max-vw) {
+				font-size: $max-font-size;
+			}
+		}
+	}
+}

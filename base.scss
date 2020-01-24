@@ -4,6 +4,7 @@
 @import 'utils/function/zindex';
 @import 'utils/function/em-size';
 @import 'utils/function/font-weight';
+@import 'utils/function/strip-unit';
 
 @import 'utils/mixin/aspect-ratio';
 @import 'utils/mixin/font-face';
@@ -15,4 +16,5 @@
 @import 'utils/mixin/pseudo';
 @import 'utils/mixin/respond-to';
 @import 'utils/mixin/size';
+@import 'utils/mixin/fluid-type';
 @import 'utils/mixin/shape/arrow';
