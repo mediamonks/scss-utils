@@ -1,18 +1,21 @@
 /**
  * Z-Index function
  *
- * @param {string} $list (Array) - The list to find the current z-index in
  * @param {string} $element (String) - The name of the current element, must be in the $list
+ * @param {string} $list (Array) - The list to find the current z-index in
  *
  * @returns {number}
+ *
+ * .foo {
+ *   z-index: zindex(bar)
+ * }
+ *
  */
-@function zindex($list, $element) {
+@function zindex($element, $list: $zLayout) {
 	$zIndex: index($list, $element);
 
 	@if $zIndex {
 		@return $zIndex;
 	}
-
-	@warn 'There is no item "#{$element}" in this list; choose one of: #{$list}';
-	@return null;
+	@error "There is no z-index item named #{$element} in #{$list}";
 }
