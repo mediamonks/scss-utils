@@ -3,9 +3,14 @@
  *
  * @param {string} $name - Name of the breakpoint used in $breakpoints
  */
+@function get-media-query($name) {
+	$query: map_get($mediaQueries, $name);
+	@return '#{$query}';
+}
+
 @mixin respond-to($name) {
 	@if map-has-key($mediaQueries, $name) {
-		@media #{map-get($mediaQueries, $name)} {
+		@media #{get-media-query($name)} {
 			@content;
 		}
 	} @else {
