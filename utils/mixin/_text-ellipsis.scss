@@ -1,3 +1,8 @@
+/**
+ * Text Ellipsis
+ *
+ * @param {number} $lines - Numbers of lines to make the text overflow ellipsis
+ */
 @mixin text-ellipsis($lines: 1) {
 	overflow: hidden;
 	text-overflow: ellipsis;
