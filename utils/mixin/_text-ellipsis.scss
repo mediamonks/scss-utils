@@ -1,0 +1,12 @@
+@mixin text-ellipsis($lines: 1) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	@if $lines > 1 {
+		display: -webkit-box;
+		-webkit-line-clamp: $lines;
+		-webkit-box-orient: vertical;
+		visibility: visible;
+	} @else {
+		white-space: nowrap;
+	}
+}
