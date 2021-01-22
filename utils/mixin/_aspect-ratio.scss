@@ -6,16 +6,16 @@
  * @param {boolean} $relative (true) - Add relative position to element
  */
 @mixin aspect-ratio($width: 1, $height: $width, $relative: true) {
-	aspect-ratio: $width / $height;
-	@if ($relative == true) {
-		position: relative;
-	}
+  aspect-ratio: $width / $height;
+  @if ($relative == true) {
+    position: relative;
+  }
 
-	@supports not (aspect-ratio: $width / $height) {
-		&::before {
-			content: '';
-			display: block;
-			padding-top: unquote(($height / $width) * 100 + '%');
-		}
-	}
+  @supports not (aspect-ratio: $width / $height) {
+    &::before {
+      content: '';
+      display: block;
+      padding-top: unquote(($height / $width) * 100 + '%');
+    }
+  }
 }
