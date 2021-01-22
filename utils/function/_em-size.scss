@@ -7,5 +7,5 @@
  * @return {EM Value} - The EM value based on $value and $base
  */
 @function em-size($value, $base) {
-	@return ($value / $base) * 1em;
+  @return ($value / $base) * 1em;
 }
