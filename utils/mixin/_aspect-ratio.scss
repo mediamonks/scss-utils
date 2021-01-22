@@ -1,5 +1,6 @@
 /**
- * Aspect ratio, create a :before pseudo element for setting an aspect ratio on an element
+ * Aspect ratio, provide fallback for aspect-ratio
+ * https://caniuse.com/?search=aspect-ratio
  *
  * @param {number} $width (1) - Percentage width
  * @param {number} $height ($width) - Percentage height
