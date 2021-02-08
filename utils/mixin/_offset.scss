@@ -5,6 +5,6 @@
  * @param {number} $left (0) - Left Offset
  */
 @mixin offset($x: 0, $y: 0) {
-	top: $y;
-	left: $x;
+  top: $y;
+  left: $x;
 }

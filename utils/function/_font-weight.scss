@@ -6,10 +6,9 @@
  * @return {Number} - The CSS based font weight on the name
  */
 @function font-weight($weight) {
-	@if (map-has-key($fontWeight, $weight)) {
-		@return map-get($fontWeight, $weight);
-	}
-	@else {
-		@warn 'Couldn\'t find the font-weight: #{$weight}';
-	}
+  @if (map-has-key($fontWeight, $weight)) {
+    @return map-get($fontWeight, $weight);
+  } @else {
+    @warn 'Couldn\'t find the font-weight: #{$weight}';
+  }
 }
