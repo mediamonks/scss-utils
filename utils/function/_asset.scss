@@ -7,7 +7,7 @@
  * @return {URL} - A `url()` function leading to the asset
  */
 @function asset($type, $file) {
-	@return url($pathAsset + '/' + $type + '/' + $file);
+  @return url($pathAsset + "/" + $type + "/" + $file);
 }
 
 /*
@@ -18,7 +18,7 @@
  * @require {function} asset
  */
 @function image($file) {
-	@return asset($pathImage, $file);
+  @return asset($pathImage, $file);
 }
 
 /*
@@ -29,5 +29,5 @@
  * @require {function} asset
  */
 @function font($file) {
-	@return asset($pathFont, $file);
+  @return asset($pathFont, $file);
 }

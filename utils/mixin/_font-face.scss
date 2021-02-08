@@ -8,11 +8,11 @@
  * @param {string} $fontStyle (normal) - Font style value
  */
 @mixin font-face($name, $folder, $file, $weight: normal, $style: normal) {
-	@font-face {
-		font-family: $name;
-		src: font('#{$folder}/#{$file}.woff2') format('woff2'),
-			 font('#{$folder}/#{$file}.woff') format('woff');
-		font-weight: $weight;
-		font-style: $style;
-	}
+  @font-face {
+    font-family: $name;
+    src: font("#{$folder}/#{$file}.woff2") format("woff2"),
+      font("#{$folder}/#{$file}.woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+  }
 }
