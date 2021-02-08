@@ -1,0 +1,25 @@
+/**
+ * Text Ellipsis
+
+ * @param {number} $lines - Numbers of lines to make the text overflow ellipsis
+
+    Description of the use:
+    If you only need text ellipsis in only one line you can use:
+    @include text-ellipsis and it works with one line.
+
+    In case that you need text ellipsis in the third line of text you can pass the number of lines as a parameter:
+    @include text-ellipsis(3) 
+    
+ */
+@mixin text-ellipsis($lines: 1) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	@if $lines > 1 {
+		display: -webkit-box;
+		-webkit-line-clamp: $lines;
+		-webkit-box-orient: vertical;
+		visibility: visible;
+	} @else {
+		white-space: nowrap;
+	}
+}
