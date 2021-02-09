@@ -7,12 +7,13 @@
  * @param {string} $fontWeight (normal) - Font weight value
  * @param {string} $fontStyle (normal) - Font style value
  */
-@mixin font-face($name, $folder, $file, $weight: normal, $style: normal) {
+@mixin font-face($name, $folder, $file, $weight: normal, $style: normal, $display: auto) {
   @font-face {
     font-family: $name;
     src: font("#{$folder}/#{$file}.woff2") format("woff2"),
       font("#{$folder}/#{$file}.woff") format("woff");
     font-weight: $weight;
     font-style: $style;
+    font-display: auto;
   }
 }
