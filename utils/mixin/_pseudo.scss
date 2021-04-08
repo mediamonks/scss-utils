@@ -5,8 +5,8 @@
  * @param {position} $position (absolute)
  * @param {string} $content ('')
  */
-@mixin pseudo($display: block, $position: absolute, $content: '') {
-	content: $content;
-	display: $display;
-	position: $position;
+@mixin pseudo($display: block, $position: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $position;
 }

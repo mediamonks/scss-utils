@@ -7,12 +7,12 @@
  * @returns {number}
  */
 @function zindex($list, $element) {
-	$zIndex: index($list, $element);
+  $zIndex: index($list, $element);
 
-	@if $zIndex {
-		@return $zIndex;
-	}
+  @if $zIndex {
+    @return $zIndex;
+  }
 
-	@warn 'There is no item "#{$element}" in this list; choose one of: #{$list}';
-	@return null;
+  @warn 'There is no item "#{$element}" in this list; choose one of: #{$list}';
+  @return null;
 }
