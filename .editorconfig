@@ -2,13 +2,16 @@
 root = true
 
 [*]
-indent_style = tab
-indent_size = 4
+indent_style = space
+indent_size = 2
 charset = utf-8
+max_line_length = 100
 trim_trailing_whitespace = true
 insert_final_newline = true
+end_of_line = lf
+quote_type = single
 
-[*.md]
+[*.{md,markdown}]
 trim_trailing_whitespace = false
 
 [*.json]
