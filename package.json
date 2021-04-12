@@ -14,7 +14,7 @@
     "functions"
   ],
   "scripts": {
-    "prettify": "prettier --write \"utils/**/*.{scss}\"",
+    "prettify": "prettier --write \"utils/**/*.{js,ts,scss,json}\"",
     "test": "echo \"No test specified\" && exit 0"
   },
   "bugs": {
