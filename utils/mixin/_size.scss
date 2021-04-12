@@ -5,6 +5,6 @@
  * @param {number} $height ($width) - Height of the element
  */
 @mixin size($width: 1em, $height: $width) {
-	height: $height;
-	width: $width;
+  height: $height;
+  width: $width;
 }

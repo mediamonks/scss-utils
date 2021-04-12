@@ -8,39 +8,36 @@
  * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
  */
 @mixin arrow($direction: up, $color: #000, $size: 10px, $stretch: 1, $excludeBase: false) {
-	@if $excludeBase == false {
-		display: inline-block;
-		vertical-align: middle;
-		width: 0;
-		height: 0;
-		font: 0/0 serif;
-	}
+  @if $excludeBase == false {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    font: 0/0 serif;
+  }
 
-	$size: round($size / 2);
-	$longSize: $size * $stretch;
+  $size: round($size / 2);
+  $longSize: $size * $stretch;
 
-	@if $direction == down {
-		border-top: $longSize solid #{$color};
-		border-left: $size solid transparent;
-		border-right: $size solid transparent;
-		border-bottom: 0;
-	}
-	@else if $direction == left {
-		border-top: $size solid transparent;
-		border-left: 0;
-		border-right: $longSize solid #{$color};
-		border-bottom: $size solid transparent;
-	}
-	@else if $direction == right {
-		border-top: $size solid transparent;
-		border-left: $longSize solid #{$color};
-		border-right: 0;
-		border-bottom: $size solid transparent;
-	}
-	@else {
-		border-top: 0;
-		border-left: $size solid transparent;
-		border-right: $size solid transparent;
-		border-bottom: $longSize solid #{$color};
-	}
+  @if $direction == down {
+    border-top: $longSize solid #{$color};
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: 0;
+  } @else if $direction == left {
+    border-top: $size solid transparent;
+    border-left: 0;
+    border-right: $longSize solid #{$color};
+    border-bottom: $size solid transparent;
+  } @else if $direction == right {
+    border-top: $size solid transparent;
+    border-left: $longSize solid #{$color};
+    border-right: 0;
+    border-bottom: $size solid transparent;
+  } @else {
+    border-top: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $longSize solid #{$color};
+  }
 }
