@@ -5,7 +5,7 @@
  */
 @function remify($value, $remify: true) {
   @if $remify {
-    @return #{strip-unit($value) / 16}rem;
+    @return #{strip-unit($value) / $baseFontSizeValue}rem;
   }
   @return $value;
 }
