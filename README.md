@@ -54,8 +54,8 @@ $ npm i -S seng-scss
     - **$mediaQueries**: default list of mediaQueries (empty list)
     - **$minimumFluidTypeViewportWidth**: default value for minimum viewport width used in fluid type (480px)
     - **$maximumFluidTypeViewportWidth**: default value for maximum viewport width used in fluid type (1440px)
-    - **$minVW**: default value (375px) for the use with fluid and fluid-font used to scale from
-    - **$maxVW**: default value (1920px) for the use with fluid and fluid-font used to scale to
+    - **$minimumFluidValueViewportWidth**: default value (375px) for the use with fluid and fluid-font used to scale from
+    - **$maximumFluidValueViewportWidth**: default value (1920px) for the use with fluid and fluid-font used to scale to
     - **$ease{name}**: List of easing bezier curves
         -   **$easeLinear**
             -   **$ease**

@@ -6,7 +6,7 @@
  * This makes it possible to scale from a larger to smaller number with an increasing vw
  * The $minViewportWidth and the $maxViewportWidth will allow a value to clamp between values
  * This means: below the $maxViewportWidth the value will be $startValue and not smaller/bigger
- * By default the variables $minVW and $maxVW or used but it is possible to use different sizes
+ * By default the variables $minimumFluidValueViewportWidth and $maximumFluidValueViewportWidth or used but it is possible to use different sizes
  * It's possible to return rem units (but there is debate on whether values other than font-sizes should be rem)
  * For font-sizes there is a fluid-font function that uses rems!
  */
@@ -14,8 +14,8 @@
 @function fluid(
   $startValue,
   $endValue,
-  $minViewportWidth: $minVW,
-  $maxViewportWidth: $maxVW,
+  $minViewportWidth: $minimumFluidValueViewportWidth,
+  $maxViewportWidth: $maximumFluidValueViewportWidth,
   $remify: false
 ) {
   $minValue: $startValue;
@@ -31,7 +31,7 @@
   $endSize: remify($endValue, $remify);
   $calc: #{calc(
       #{$startSize} + ((#{1vw} - #{$additionalSize}) * #{100 * ($endValue - $startValue) /
-            ($maxViewportWidth - $minVW)})
+            ($maxViewportWidth - $minimumFluidValueViewportWidth)})
     )};
 
   @return clamp(#{remify($minValue, $remify)}, #{$calc}, #{remify($maxValue, $remify)});
