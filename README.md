@@ -7,10 +7,12 @@ A SCSS library of mixins and functions that are used within projects.
 
 ## Installation
 
-### npm
-
-```sh
-npm i -S seng-scss
+```shell
+$ yarn add -D seng-scss
+```
+or
+```shell
+$ npm i -S seng-scss
 ```
 
 ## Included functionalities
@@ -38,18 +40,23 @@ npm i -S seng-scss
 -   [em-size](./utils/function/_em-size.scss)
 -   [font-weight](./utils/function/_font-weight.scss)
 -   [strip-unit](./utils/function/_strip-unit.scss)
+-   [remify](./utils/function/_remify.scss)
+-   [fluid](./utils/function/_fluid.scss)
+-   [fluid-font](./utils/function/_fluid-font.scss)
 
 ### Variables
 
 -   [variables](./utils/_variables.scss)
-    -   **$pathAsset**: default project asset path (..)
-    -   **$pathFont**: default project font path (font, prefixed with $pathAsset)
-    -   **$pathImage**: default project image path (image, prefixed with $pathAsset)
-    -   **$zLayout**: default list of zIndex names (default)\*\*
-    -   **$mediaQueries**: default list of mediaQueries (empty list)
-    -   **$minimumFluidTypeViewportWidth**: default value for minumum viewport width used in fluid type (480px)
-    -   **$maximumFluidTypeViewportWidth**: default value for maximum viewport width used in fluid type (1440px)
-    -   **$ease{name}**: List of easing bezier curves
+    - **$pathAsset**: default project asset path (..)
+    - **$pathFont**: default project font path (font, prefixed with $pathAsset)
+    - **$pathImage**: default project image path (image, prefixed with $pathAsset)
+    - **$zLayout**: default list of zIndex names (default)\*\*
+    - **$mediaQueries**: default list of mediaQueries (empty list)
+    - **$minimumFluidTypeViewportWidth**: default value for minimum viewport width used in fluid type (480px)
+    - **$maximumFluidTypeViewportWidth**: default value for maximum viewport width used in fluid type (1440px)
+    - **$minVW**: default value (375px) for the use with fluid and fluid-font used to scale from
+    - **$maxVW**: default value (1920px) for the use with fluid and fluid-font used to scale to
+    - **$ease{name}**: List of easing bezier curves
         -   **$easeLinear**
             -   **$ease**
             -   **$easeIn**
@@ -79,6 +86,7 @@ npm i -S seng-scss
             -   **$easeInOutExpo**
             -   **$easeInOutCirc**
             -   **$easeInOutBack**
+  
 
 ## Contribute
 

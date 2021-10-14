@@ -1,0 +1,38 @@
+@import "../variables", "remify", "strip-unit";
+
+/*
+ * This function will return a fluid value between two viewport size
+ * The value will linear scale from the start value to the end value
+ * This makes it possible to scale from a larger to smaller number with an increasing vw
+ * The $minViewportWidth and the $maxViewportWidth will allow a value to clamp between values
+ * This means: below the $maxViewportWidth the value will be $startValue and not smaller/bigger
+ * By default the variables $minVW and $maxVW or used but it is possible to use different sizes
+ * It's possible to return rem units (but there is debate on whether values other than font-sizes should be rem)
+ * For font-sizes there is a fluid-font function that uses rems!
+ */
+
+@function fluid(
+  $startValue,
+  $endValue,
+  $minViewportWidth: $minVW,
+  $maxViewportWidth: $maxVW,
+  $remify: false
+) {
+  $minValue: $startValue;
+  $maxValue: $endValue;
+
+  @if $endValue < $startValue {
+    $minValue: $endValue;
+    $maxValue: $startValue;
+  }
+
+  $additionalSize: #{strip-unit($minViewportWidth) / 100}px;
+  $startSize: remify($startValue, $remify);
+  $endSize: remify($endValue, $remify);
+  $calc: #{calc(
+      #{$startSize} + ((#{1vw} - #{$additionalSize}) * #{100 * ($endValue - $startValue) /
+            ($maxViewportWidth - $minVW)})
+    )};
+
+  @return clamp(#{remify($minValue, $remify)}, #{$calc}, #{remify($maxValue, $remify)});
+}

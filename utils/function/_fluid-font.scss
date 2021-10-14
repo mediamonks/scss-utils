@@ -1,0 +1,16 @@
+@import "../variables", "fluid";
+
+/*
+ * See fluid for usage
+ * This function will remify the values by default
+ */
+
+@function fluid-font($minValue, $maxValue, $minViewportWidth: $minVW, $maxViewportWidth: $maxVW) {
+  @return fluid(
+    $minValue,
+    $maxValue,
+    $minViewportWidth: $minVW,
+    $maxViewportWidth: $maxVW,
+    $remify: true
+  );
+}
