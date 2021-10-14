@@ -3,8 +3,6 @@ $pathAsset: ".." !default;
 $pathFont: "font" !default;
 $pathImage: "image" !default;
 
-$baseFontSizeValue: 16 !default;
-
 // Z-Index
 $zLayout: default !default;
 
@@ -57,5 +55,6 @@ $minimumFluidTypeViewportWidth: 480px !default;
 $maximumFluidTypeViewportWidth: 1440px !default;
 
 // Fluid value sizes
+$baseFontSizeValue: 16 !default;
 $minimumFluidValueViewportWidth: 375px !default;
 $maximumFluidValueViewportWidth: 1920px !default;
