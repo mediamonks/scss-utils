@@ -10,8 +10,8 @@
 @mixin fluid-type(
   $min-font-size,
   $max-font-size,
-  $min-vw: $minimumFluidTypeViewportWidth,
-  $max-vw: $maximumFluidTypeViewportWidth
+  $min-vw: $minimumFluidValueViewportWidth,
+  $max-vw: $maximumFluidValueViewportWidth
 ) {
   $u1: unit($min-vw);
   $u2: unit($max-vw);

@@ -52,11 +52,9 @@ $ npm i -S seng-scss
     - **$pathImage**: default project image path (image, prefixed with $pathAsset)
     - **$zLayout**: default list of zIndex names (default)\*\*
     - **$mediaQueries**: default list of mediaQueries (empty list)
-    - **$minimumFluidTypeViewportWidth**: default value for minimum viewport width used in fluid type (480px)
-    - **$maximumFluidTypeViewportWidth**: default value for maximum viewport width used in fluid type (1440px)
     - **$baseFontSizeValue**: default value (16) use for calculation in remify function
-    - **$minimumFluidValueViewportWidth**: default value (375px) for the use with fluid and fluid-font used to scale from
-    - **$maximumFluidValueViewportWidth**: default value (1920px) for the use with fluid and fluid-font used to scale to
+    - **$minimumFluidValueViewportWidth**: default value for minimum viewport width used in fluid type (480px)
+    - **$maximumFluidValueViewportWidth**: default value for maximum viewport width used in fluid type (1440px)
     - **$ease{name}**: List of easing bezier curves
         -   **$easeLinear**
             -   **$ease**

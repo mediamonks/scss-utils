@@ -50,11 +50,7 @@ $easeInOutExpo: cubic-bezier(1, 0, 0, 1);
 $easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 $easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-// Fluid type
-$minimumFluidTypeViewportWidth: 480px !default;
-$maximumFluidTypeViewportWidth: 1440px !default;
-
-// Fluid value sizes
+// Fluid values
 $baseFontSizeValue: 16 !default;
-$minimumFluidValueViewportWidth: 375px !default;
-$maximumFluidValueViewportWidth: 1920px !default;
+$minimumFluidValueViewportWidth: 480px !default;
+$maximumFluidValueViewportWidth: 1440px !default;
