@@ -22,7 +22,7 @@ npm i -S seng-scss
 -   [hover](./utils/mixin/_hover.scss)
 -   [ir](./utils/mixin/_image-replacement.scss)
 -   [placeholder](./utils/mixin/_placeholder.scss)
--   [position](./utils/mixin/_positions.scss)
+-   [position](./utils/mixin/_position.scss)
 -   [offset](./utils/mixin/_offset.scss)
 -   [pseudo](./utils/mixin/_pseudo.scss)
 -   [respond-to](./utils/mixin/_respond-to.scss)
