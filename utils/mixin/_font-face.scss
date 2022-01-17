@@ -1,18 +1,20 @@
 /**
  * Font Face
  *
- * @param {string} $fontName - Name of the font
- * @param {string} $folderName - Subfolder inside the fonts folder
- * @param {string} $fileName - Name of the font-file
- * @param {string} $fontWeight (normal) - Font weight value
- * @param {string} $fontStyle (normal) - Font style value
+ * @param {string} $name - Name of the font
+ * @param {string} $folder - Subfolder inside the fonts folder
+ * @param {string} $file - Name of the font-file
+ * @param {string} $weight (normal) - Font weight value
+ * @param {string} $style (normal) - Font style value
+ * @param {string} $display (auto) - Font display value, determines how a font face is displayed based on whether and when it is downloaded and ready to use.
  */
-@mixin font-face($name, $folder, $file, $weight: normal, $style: normal) {
+@mixin font-face($name, $folder, $file, $weight: normal, $style: normal, $display: auto) {
   @font-face {
     font-family: $name;
     src: font("#{$folder}/#{$file}.woff2") format("woff2"),
       font("#{$folder}/#{$file}.woff") format("woff");
     font-weight: $weight;
     font-style: $style;
+    font-display: $display;
   }
 }
