@@ -1,6 +1,6 @@
 {
   "name": "seng-scss",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "SCSS library of mixins and functions that are used within projects",
   "main": "base.scss",
   "author": "René Drieënhuizen <rene@mediamonks.com> (https://github.com/ReneDrie)",
