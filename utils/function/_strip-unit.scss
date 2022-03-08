@@ -1,6 +1,8 @@
 /*
  * Remove unit from value
  */
+@use "sass:math";
+
 @function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
+  @return math.div($value, $value * 0 + 1);
 }
