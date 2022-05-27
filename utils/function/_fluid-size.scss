@@ -14,16 +14,21 @@
   $maxValue,
   $minViewportWidth: $minimumFluidTypeViewportWidth,
   $maxViewportWidth: $maximumFluidTypeViewportWidth,
+  $remify: false,
   $useClamp: true
 ) {
   $additionalSize: #{strip-unit($minViewportWidth) / 100}px;
+
+  $startSize: remify($minValue, $remify);
+  $endSize: remify($maxValue, $remify);
+
   $calc: #{calc(
-      #{$minValue} + ((#{1vw} - #{$additionalSize}) * #{100 * ($maxValue - $minValue) /
+      #{$startSize} + ((#{1vw} - #{$additionalSize}) * #{100 * ($endSize - $startSize) /
             ($maxViewportWidth - $minViewportWidth)})
     )};
 
   @if $useClamp {
-    @return clamp(#{$minValue}, #{$calc}, #{$maxValue});
+    @return clamp(#{$startSize}, #{$calc}, #{$endSize});
   }
-  @return max(#{$minValue}, #{$calc});
+  @return max(#{$startSize}, #{$calc});
 }

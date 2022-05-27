@@ -51,5 +51,6 @@ $easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 $easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 // Fluid type
+$baseFontSizeValue: 16 !default;
 $minimumFluidTypeViewportWidth: 480px !default;
 $maximumFluidTypeViewportWidth: 1440px !default;

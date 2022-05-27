@@ -7,10 +7,14 @@ A SCSS library of mixins and functions that are used within projects.
 
 ## Installation
 
-### npm
+### yarn
 
-```sh
-npm i -S seng-scss
+```shell
+$ yarn add -D seng-scss
+```
+### npm
+```shell
+$ npm i -S seng-scss
 ```
 
 ## Included functionalities
@@ -37,6 +41,7 @@ npm i -S seng-scss
 -   [em-size](./utils/function/_em-size.scss)
 -   [font-weight](./utils/function/_font-weight.scss)
 -   [strip-unit](./utils/function/_strip-unit.scss)
+-   [remify](./utils/function/_remify.scss)
 -   [fluid-size](./utils/function/_fluid-size.scss)
 
 ### Variables
@@ -47,8 +52,8 @@ npm i -S seng-scss
     -   **$pathImage**: default project image path (image, prefixed with $pathAsset)
     -   **$zLayout**: default list of zIndex names (default)\*\*
     -   **$mediaQueries**: default list of mediaQueries (empty list)
-    -   **$minimumFluidTypeViewportWidth**: default value for minumum viewport width used in fluid type (480px)
-    -   **$maximumFluidTypeViewportWidth**: default value for maximum viewport width used in fluid type (1440px)
+    -   **$minimumFluidTypeViewportWidth**: default value for minumum viewport width used in fluid size (480px)
+    -   **$maximumFluidTypeViewportWidth**: default value for maximum viewport width used in fluid size (1440px)
     -   **$ease{name}**: List of easing bezier curves
         -   **$easeLinear**
             -   **$ease**
