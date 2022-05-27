@@ -28,7 +28,6 @@ npm i -S seng-scss
 -   [respond-to](./utils/mixin/_respond-to.scss)
 -   [size](./utils/mixin/_size.scss)
 -   [text-ellipsis](./utils/mixin/_text-ellipsis.scss)
--   [fluid-type](./utils/mixin/_fluid-type.scss)
 -   [arrow](./utils/mixin/shape/_arrow.scss)
 
 ### Functions
@@ -38,6 +37,7 @@ npm i -S seng-scss
 -   [em-size](./utils/function/_em-size.scss)
 -   [font-weight](./utils/function/_font-weight.scss)
 -   [strip-unit](./utils/function/_strip-unit.scss)
+-   [fluid-size](./utils/function/_fluid-size.scss)
 
 ### Variables
 

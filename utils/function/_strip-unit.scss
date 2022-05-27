@@ -1,6 +1,10 @@
 /*
  * Remove unit from value
  */
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
 }

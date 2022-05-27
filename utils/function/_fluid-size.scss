@@ -1,0 +1,29 @@
+/*
+ * Return a value that is being calculated based on the users viewport width between an min and max value.
+ *
+ * @param {String} $minValue - The minimum font-size
+ * @param {String} $maxValue - The maximum font-size
+ * @param {String} $minViewportWidth - The viewport size that is used for the minimum font-size
+ * @param {String} $maxViewportWidth - The viewport size that is used for the maximum font-size
+ * @param {Boolean} $useClamp - A boolean indicating if we should use clamp or max (where the size keeps scaling further than the $maxValue)
+ *
+ * @return {Number} - The clamped or maximum value calculated based on viewport widths
+ */
+@function fluid-size(
+  $minValue,
+  $maxValue,
+  $minViewportWidth: $minimumFluidTypeViewportWidth,
+  $maxViewportWidth: $maximumFluidTypeViewportWidth,
+  $useClamp: true
+) {
+  $additionalSize: #{strip-unit($minViewportWidth) / 100}px;
+  $calc: #{calc(
+      #{$minValue} + ((#{1vw} - #{$additionalSize}) * #{100 * ($maxValue - $minValue) /
+            ($maxViewportWidth - $minViewportWidth)})
+    )};
+
+  @if $useClamp {
+    @return clamp(#{$minValue}, #{$calc}, #{$maxValue});
+  }
+  @return max(#{$minValue}, #{$calc});
+}
