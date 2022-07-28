@@ -52,8 +52,8 @@ $ npm i -S seng-scss
     -   **$pathImage**: default project image path (image, prefixed with $pathAsset)
     -   **$zLayout**: default list of zIndex names (default)\*\*
     -   **$mediaQueries**: default list of mediaQueries (empty list)
-    -   **$minimumFluidTypeViewportWidth**: default value for minumum viewport width used in fluid size (480px)
-    -   **$maximumFluidTypeViewportWidth**: default value for maximum viewport width used in fluid size (1440px)
+    -   **$minimumFluidSizeViewportWidth**: default value for minumum viewport width used in fluid size (480px)
+    -   **$maximumFluidSizeViewportWidth**: default value for maximum viewport width used in fluid size (1440px)
     -   **$ease{name}**: List of easing bezier curves
         -   **$easeLinear**
             -   **$ease**

@@ -12,8 +12,8 @@
 @function fluid-size(
   $minValue,
   $maxValue,
-  $minViewportWidth: $minimumFluidTypeViewportWidth,
-  $maxViewportWidth: $maximumFluidTypeViewportWidth,
+  $minViewportWidth: $minimumFluidSizeViewportWidth,
+  $maxViewportWidth: $maximumFluidSizeViewportWidth,
   $remify: false,
   $useClamp: true
 ) {
