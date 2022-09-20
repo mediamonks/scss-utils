@@ -4,7 +4,12 @@
 
 ### Changed
 
-* Rename package & repo from `seng-scss` to `@mediamonks/scss-utils` 
+* Rename package & repo from `seng-scss` to `@mediamonks/scss-utils`
+
+### Breaking
+
+* Uses the `(hover: hover)` media query, so we don't need additional checks, dropping support for 
+  IE11 (#9)
 
 ## 1.1.0 [2017-05-03])
 
