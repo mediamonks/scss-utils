@@ -1,6 +1,14 @@
 /*
  * Return a value that is being calculated based on the users viewport width between an min and max value.
  *
+ * Examples:
+ *
+ * // Sets a font-size from 10px to 20px between viewport sizes from 480px to 1440px (default fallback variables)
+ * font-size: fluid-size(10px, 20px);
+ *
+ * // Sets a width from 200px to 480px between viewport sizes from 480px to 1200px
+ * width: fluid-size(200px, 480px, 480px, 1200px);
+ *
  * @param {String} $minValue - The minimum font-size
  * @param {String} $maxValue - The maximum font-size
  * @param {String} $minViewportWidth - The viewport size that is used for the minimum font-size
