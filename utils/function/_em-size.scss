@@ -6,6 +6,8 @@
  *
  * @return {EM Value} - The EM value based on $value and $base
  */
+@use "sass:math";
+
 @function em-size($value, $base) {
-  @return ($value / $base) * 1em;
+  @return math.div($value, $base) * 1em;
 }
