@@ -1,7 +1,7 @@
-[![npm](https://img.shields.io/npm/v/seng-scss.svg?maxAge=2592000)](https://www.npmjs.com/package/seng-scss)
-[![npm](https://img.shields.io/npm/dm/seng-scss.svg?maxAge=2592000)](https://www.npmjs.com/package/seng-scss)
+[![npm](https://img.shields.io/npm/v/@mediamonks/scss-utils.svg?maxAge=2592000)](https://www.npmjs.com/package/@mediamonks/scss-utils)
+[![npm](https://img.shields.io/npm/dm/@mediamonks/scss-utils.svg?maxAge=2592000)](https://www.npmjs.com/package/@mediamonks/scss-utils)
 
-# seng-scss
+# @mediamonks/scss-utils
 
 A SCSS library of mixins and functions that are used within projects.
 
@@ -10,7 +10,7 @@ A SCSS library of mixins and functions that are used within projects.
 ### npm
 
 ```sh
-npm i -S seng-scss
+npm i -S @mediamonks/scss-utils
 ```
 
 ## Included functionalities
