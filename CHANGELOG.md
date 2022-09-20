@@ -10,6 +10,7 @@
 
 * Uses the `(hover: hover)` media query, so we don't need additional checks, dropping support for 
   IE11 (#9)
+* Migrate divisions to using `math.div`(#21)
 
 ## 1.1.0 [2017-05-03])
 

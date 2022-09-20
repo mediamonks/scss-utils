@@ -5,6 +5,8 @@
  * @param {number} $height ($width) - Percentage height
  * @param {boolean} $relative (true) - Add relative position to element
  */
+@use "sass:math";
+
 @mixin aspect-ratio($width: 1, $height: $width, $relative: true) {
   @if ($relative == true) {
     position: relative;
@@ -13,6 +15,6 @@
   &:before {
     content: "";
     display: block;
-    padding-top: unquote(($height / $width) * 100 + "%");
+    padding-top: unquote(math.div($height, $width) * 100 + "%");
   }
 }
