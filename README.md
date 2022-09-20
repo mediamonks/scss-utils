@@ -1,7 +1,7 @@
-[![npm](https://img.shields.io/npm/v/seng-scss.svg?maxAge=2592000)](https://www.npmjs.com/package/seng-scss)
-[![npm](https://img.shields.io/npm/dm/seng-scss.svg?maxAge=2592000)](https://www.npmjs.com/package/seng-scss)
+[![npm](https://img.shields.io/npm/v/@mediamonks/scss-utils.svg?maxAge=2592000)](https://www.npmjs.com/package/@mediamonks/scss-utils)
+[![npm](https://img.shields.io/npm/dm/@mediamonks/scss-utils.svg?maxAge=2592000)](https://www.npmjs.com/package/@mediamonks/scss-utils)
 
-# seng-scss
+# @mediamonks/scss-utils
 
 A SCSS library of mixins and functions that are used within projects.
 
@@ -10,7 +10,7 @@ A SCSS library of mixins and functions that are used within projects.
 ### npm
 
 ```sh
-npm i -S seng-scss
+npm i -S @mediamonks/scss-utils
 ```
 
 ## Included functionalities
@@ -22,7 +22,7 @@ npm i -S seng-scss
 -   [hover](./utils/mixin/_hover.scss)
 -   [ir](./utils/mixin/_image-replacement.scss)
 -   [placeholder](./utils/mixin/_placeholder.scss)
--   [position](./utils/mixin/_positions.scss)
+-   [position](./utils/mixin/_position.scss)
 -   [offset](./utils/mixin/_offset.scss)
 -   [pseudo](./utils/mixin/_pseudo.scss)
 -   [respond-to](./utils/mixin/_respond-to.scss)
