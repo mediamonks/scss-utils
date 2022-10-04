@@ -3,16 +3,16 @@
  *
  * Examples:
  *
- * // Sets a font-size from 10px to 20px between viewport sizes from 480px to 1440px (default fallback variables)
+ * // Set a font-size from 10px to 20px between viewport sizes from 480px to 1440px (default fallback variables)
  * font-size: fluid-size(10px, 20px);
  *
- * // Sets a width from 200px to 480px between viewport sizes from 480px to 1200px
+ * // Set a width from 200px to 480px between viewport sizes from 480px to 1200px
  * width: fluid-size(200px, 480px, 480px, 1200px);
  *
- * @param {String} $minValue - The minimum font-size
- * @param {String} $maxValue - The maximum font-size
- * @param {String} $minViewportWidth - The viewport size that is used for the minimum font-size
- * @param {String} $maxViewportWidth - The viewport size that is used for the maximum font-size
+ * @param {String} $minValue - The minimum size
+ * @param {String} $maxValue - The maximum size
+ * @param {String} $minViewportWidth - The viewport size that is used for the minimum size
+ * @param {String} $maxViewportWidth - The viewport size that is used for the maximum size
  * @param {Boolean} $useClamp - A boolean indicating if we should use clamp or max (where the size keeps scaling further than the $maxValue)
  *
  * @return {Number} - The clamped or maximum value calculated based on viewport widths
