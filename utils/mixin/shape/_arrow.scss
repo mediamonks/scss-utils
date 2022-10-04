@@ -16,7 +16,7 @@
     font: 0/0 serif;
   }
 
-  $size: round($size / 2);
+  $size: round($size * 0.5);
   $longSize: $size * $stretch;
 
   @if $direction == down {

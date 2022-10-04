@@ -1,15 +1,18 @@
 {
-  "name": "seng-scss",
-  "version": "1.2.6",
+  "name": "@mediamonks/scss-utils",
+  "version": "2.0.0",
   "description": "SCSS library of mixins and functions that are used within projects",
   "main": "base.scss",
   "author": "René Drieënhuizen <rene@mediamonks.com> (https://github.com/ReneDrie)",
   "homepage": "https://www.mediamonks.com/",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
-    "seng",
     "mediamonks",
     "scss",
+    "utils",
     "mixins",
     "functions"
   ],
@@ -18,11 +21,11 @@
     "prettify": "prettier --write \"utils/**/*.{js,ts,scss,json}\""
   },
   "bugs": {
-    "url": "https://github.com/mediamonks/seng-scss/issues"
+    "url": "https://github.com/mediamonks/scss-utils/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mediamonks/seng-scss.git"
+    "url": "https://github.com/mediamonks/scss-utils.git"
   },
   "devDependencies": {
     "prettier": "^2.2.1"

@@ -1,14 +1,20 @@
 /**
  * Hover Mixin for applying :hover pseudo styles
  *
- * Add your own implementation for showing hovers
- * Example using Modernizr touch check: html.no-touch &:hover { @content; }
- * Leaving it to just :hover by default. But best practice to always use the mixin
+ * Uses the hover mixin with an optional extra selector (like '$:focus-visible')
  *
  * @param $extraSelector:string (optional) = an extra selector that can have the same styles as a hover (for mobile/active state)
  */
 @mixin hover($extraSelector: null) {
-  &:hover#{", "$extraSelector} {
-    @content;
-  }
+	@media (hover: hover) {
+		&:hover {
+			@content;
+		}
+	}
+
+	@if $extraSelector {
+		#{$extraSelector} {
+			@content;
+		}
+	}
 }

@@ -1,10 +1,24 @@
-# Changes to seng-scss
+# Changes to `@mediamonks/scss-utils`
 
-### 1.1.0 (May 03, 2017)
+## 2.0.0 [2022-09-20]
+
+### Changed
+
+* Rename package & repo from `seng-scss` to `@mediamonks/scss-utils`
+
+### Breaking
+
+* Uses the `(hover: hover)` media query, so we don't need additional checks, dropping support for 
+  IE11 (#9)
+* Migrate divisions to using `math.div`(#21)
+
+## 1.1.0 [2017-05-03])
+
+### Added
 
 * Add function em-size
 * Add function font-weight
 
-### 1.0.0 (March 15, 2017)
+## 1.0.0 [2017-03-15])
 
 * Public release
