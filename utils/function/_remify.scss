@@ -1,0 +1,10 @@
+/*
+ * Function to turn a pixel value into a rem value based on the base font-size being 16
+ * the second param seems a bit redundant but is used for fluid and fluid-fonts
+ */
+@function remify($value, $remify: true) {
+  @if $remify {
+    @return #{strip-unit($value) / $baseFontSizeValue}rem;
+  }
+  @return $value;
+}
