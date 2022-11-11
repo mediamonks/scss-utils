@@ -27,7 +27,7 @@
   $remify: false,
   $useClamp: true
 ) {
-  $additionalSize: #{strip-unit($minViewportWidth) / 100}px;
+  $additionalSize: #{math.div(strip-unit($minViewportWidth) / 100)}px;
 
   $startSize: remify($minValue, $remify);
   $endSize: remify($maxValue, $remify);
