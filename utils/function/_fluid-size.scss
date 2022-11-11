@@ -1,0 +1,44 @@
+/*
+ * Return a value that is being calculated based on the users viewport width between an min and max value.
+ *
+ * Examples:
+ *
+ * // Set a font-size from 10px to 20px between viewport sizes from 480px to 1440px (default fallback variables)
+ * font-size: fluid-size(10px, 20px);
+ *
+ * // Set a width from 200px to 480px between viewport sizes from 480px to 1200px
+ * width: fluid-size(200px, 480px, 480px, 1200px);
+ *
+ * @param {String} $minValue - The minimum size
+ * @param {String} $maxValue - The maximum size
+ * @param {String} $minViewportWidth - The viewport size that is used for the minimum size
+ * @param {String} $maxViewportWidth - The viewport size that is used for the maximum size
+ * @param {Boolean} $useClamp - A boolean indicating if we should use clamp or max (where the size keeps scaling further than the $maxValue)
+ *
+ * @return {Number} - The clamped or maximum value calculated based on viewport widths
+ */
+@use "sass:math";
+
+@function fluid-size(
+  $minValue,
+  $maxValue,
+  $minViewportWidth: $minimumFluidSizeViewportWidth,
+  $maxViewportWidth: $maximumFluidSizeViewportWidth,
+  $remify: false,
+  $useClamp: true
+) {
+  $additionalSize: #{strip-unit($minViewportWidth) / 100}px;
+
+  $startSize: remify($minValue, $remify);
+  $endSize: remify($maxValue, $remify);
+
+  $calc: #{calc(
+      #{$startSize} + ((#{1vw} - #{$additionalSize}) * #{100 * math.div(($endSize - $startSize),
+            ($maxViewportWidth - $minViewportWidth))})
+    )};
+
+  @if $useClamp {
+    @return clamp(#{$startSize}, #{$calc}, #{$endSize});
+  }
+  @return max(#{$startSize}, #{$calc});
+}

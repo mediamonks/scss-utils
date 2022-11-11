@@ -7,6 +7,11 @@ A SCSS library of mixins and functions that are used within projects.
 
 ## Installation
 
+### yarn
+
+```shell
+$ yarn add -D seng-scss
+```
 ### npm
 
 ```sh
@@ -28,7 +33,6 @@ npm i -S @mediamonks/scss-utils
 -   [respond-to](./utils/mixin/_respond-to.scss)
 -   [size](./utils/mixin/_size.scss)
 -   [text-ellipsis](./utils/mixin/_text-ellipsis.scss)
--   [fluid-type](./utils/mixin/_fluid-type.scss)
 -   [arrow](./utils/mixin/shape/_arrow.scss)
 
 ### Functions
@@ -38,6 +42,8 @@ npm i -S @mediamonks/scss-utils
 -   [em-size](./utils/function/_em-size.scss)
 -   [font-weight](./utils/function/_font-weight.scss)
 -   [strip-unit](./utils/function/_strip-unit.scss)
+-   [remify](./utils/function/_remify.scss)
+-   [fluid-size](./utils/function/_fluid-size.scss)
 
 ### Variables
 
@@ -47,8 +53,8 @@ npm i -S @mediamonks/scss-utils
     -   **$pathImage**: default project image path (image, prefixed with $pathAsset)
     -   **$zLayout**: default list of zIndex names (default)\*\*
     -   **$mediaQueries**: default list of mediaQueries (empty list)
-    -   **$minimumFluidTypeViewportWidth**: default value for minumum viewport width used in fluid type (480px)
-    -   **$maximumFluidTypeViewportWidth**: default value for maximum viewport width used in fluid type (1440px)
+    -   **$minimumFluidSizeViewportWidth**: default value for minumum viewport width used in fluid size (480px)
+    -   **$maximumFluidSizeViewportWidth**: default value for maximum viewport width used in fluid size (1440px)
     -   **$ease{name}**: List of easing bezier curves
         -   **$easeLinear**
             -   **$ease**
