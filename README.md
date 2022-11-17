@@ -10,7 +10,7 @@ A SCSS library of mixins and functions that are used within projects.
 ### yarn
 
 ```shell
-$ yarn add -D seng-scss
+$ yarn add -D @mediamonks/scss-utils
 ```
 ### npm
 
