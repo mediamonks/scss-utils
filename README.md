@@ -51,10 +51,12 @@ npm i -S @mediamonks/scss-utils
     -   **$pathAsset**: default project asset path (..)
     -   **$pathFont**: default project font path (font, prefixed with $pathAsset)
     -   **$pathImage**: default project image path (image, prefixed with $pathAsset)
-    -   **$zLayout**: default list of zIndex names (default)\*\*
+    -   **$zLayout**: default list of zIndex names (default)
     -   **$mediaQueries**: default list of mediaQueries (empty list)
     -   **$minimumFluidSizeViewportWidth**: default value for minumum viewport width used in fluid size (480px)
     -   **$maximumFluidSizeViewportWidth**: default value for maximum viewport width used in fluid size (1440px)
+    -   **$useRem**: default value for using/converting pixels into REM units in fluid size (true)
+    -   **$useClamp**: default value for using `clamp` (otherwise `max`) in fluid size (true)
     -   **$ease{name}**: List of easing bezier curves
         -   **$easeLinear**
             -   **$ease**
