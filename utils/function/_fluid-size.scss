@@ -24,18 +24,21 @@
   $maxValue,
   $minViewportWidth: $minimumFluidSizeViewportWidth,
   $maxViewportWidth: $maximumFluidSizeViewportWidth,
-  $remify: false,
-  $useClamp: true
+  $remify: $useRem,
+  $useClamp: $useClamp,
 ) {
-  $additionalSize: #{math.div(strip-unit($minViewportWidth), 100)}px;
-
   $startSize: remify($minValue, $remify);
   $endSize: remify($maxValue, $remify);
+  $minViewportWidthConverted: remify($minViewportWidth, $remify);
 
-  $calc: #{calc(
-      #{$startSize} + ((#{1vw} - #{$additionalSize}) * #{100 * math.div(($endSize - $startSize),
-            ($maxViewportWidth - $minViewportWidth))})
-    )};
+  $optionalRemDivider: 1;
+  @if ($remify) {
+    $optionalRemDivider: $baseFontSizeValue;
+  }
+  $divider: math.div(strip-unit($maxViewportWidth - $minViewportWidth), $optionalRemDivider);
+  $sizeMultiplier: math.div(strip-unit($maxValue - $minValue), $optionalRemDivider);
+
+  $calc: calc(#{$startSize} + #{$sizeMultiplier} * (100vw - #{$minViewportWidthConverted}) / #{$divider});
 
   @if $useClamp {
     @return clamp(#{$startSize}, #{$calc}, #{$endSize});
