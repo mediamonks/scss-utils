@@ -2,13 +2,20 @@
   "name": "@mediamonks/scss-utils",
   "version": "2.1.6",
   "description": "SCSS library of mixins and functions that are used within projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mediamonks/scss-utils.git"
+  },
+  "files": [
+    "utils/**/*",
+    "base.scss",
+    "CONTRIBUTING.md",
+    "AUTHORS.md"
+  ],
   "main": "base.scss",
   "author": "René Drieënhuizen <rene@mediamonks.com> (https://github.com/ReneDrie)",
   "homepage": "https://www.mediamonks.com/",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "mediamonks",
     "scss",
@@ -22,10 +29,6 @@
   },
   "bugs": {
     "url": "https://github.com/mediamonks/scss-utils/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mediamonks/scss-utils.git"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
