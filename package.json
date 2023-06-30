@@ -1,6 +1,6 @@
 {
   "name": "@mediamonks/scss-utils",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "SCSS library of mixins and functions that are used within projects",
   "repository": {
     "type": "git",
