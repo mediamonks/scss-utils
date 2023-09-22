@@ -2,7 +2,7 @@
  * Size an Element
  *
  * @param {number} $inlineSize (1em) - Width / Inline size of the element
- * @param {number} $height ($width) - Height / Block size of the element
+ * @param {number} $blockSize ($inlineSize) - Height / Block size of the element
  */
 @mixin size($inlineSize: 1em, $blockSize: $inlineSize) {
   block-size: $blockSize;
