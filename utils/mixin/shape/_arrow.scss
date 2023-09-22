@@ -11,8 +11,8 @@
   @if $excludeBase == false {
     display: inline-block;
     vertical-align: middle;
-    width: 0;
-    height: 0;
+    inline-size: 0;
+    block-size: 0;
     font: 0/0 serif;
   }
 
@@ -20,24 +20,20 @@
   $longSize: $size * $stretch;
 
   @if $direction == down {
-    border-top: $longSize solid #{$color};
-    border-left: $size solid transparent;
-    border-right: $size solid transparent;
-    border-bottom: 0;
+    border-block-start: $longSize solid #{$color};
+    border-inline: $size solid transparent;
+    border-block-end: 0;
   } @else if $direction == left {
-    border-top: $size solid transparent;
-    border-left: 0;
-    border-right: $longSize solid #{$color};
-    border-bottom: $size solid transparent;
+    border-block: $size solid transparent;
+    border-inline-start: 0;
+    border-inline-end: $longSize solid #{$color};
   } @else if $direction == right {
-    border-top: $size solid transparent;
-    border-left: $longSize solid #{$color};
-    border-right: 0;
-    border-bottom: $size solid transparent;
+    border-block: $size solid transparent;
+    border-inline-start: $longSize solid #{$color};
+    border-inline-end: 0;
   } @else {
-    border-top: 0;
-    border-left: $size solid transparent;
-    border-right: $size solid transparent;
-    border-bottom: $longSize solid #{$color};
+    border-block-start: 0;
+    border-inline: $size solid transparent;
+    border-block-end: $longSize solid #{$color};
   }
 }

@@ -1,10 +1,10 @@
 /**
  * Offset
  *
- * @param {number} $top (0) - Top Offset
- * @param {number} $left (0) - Left Offset
+ * @param {number} $y (0) - Top / Block start Offset
+ * @param {number} $x (0) - Left / Inline start Offset
  */
 @mixin offset($x: 0, $y: 0) {
-  top: $y;
-  left: $x;
+  inset-block-start: $y;
+  inset-inline-start: $x;
 }

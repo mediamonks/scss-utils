@@ -6,8 +6,8 @@
  * // Set a font-size from 10px to 20px between viewport sizes from 480px to 1440px (default fallback variables)
  * font-size: fluid-size(10px, 20px);
  *
- * // Set a width from 200px to 480px between viewport sizes from 480px to 1200px
- * width: fluid-size(200px, 480px, 480px, 1200px);
+ * // Set a inline-size from 200px to 480px between viewport sizes from 480px to 1200px
+ * inline-size: fluid-size(200px, 480px, 480px, 1200px);
  *
  * @param {String} $minValue - The minimum size
  * @param {String} $maxValue - The maximum size
