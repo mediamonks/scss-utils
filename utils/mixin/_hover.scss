@@ -4,17 +4,26 @@
  * Uses the hover mixin with an optional extra selector (like '$:focus-visible')
  *
  * @param $extraSelector:string (optional) = an extra selector that can have the same styles as a hover (for mobile/active state)
+ * @param $extraMediaQuery:string (optional) = an extra media query selector that can for example prevent issues on Samsung devices ( https://www.ctrl.blog/entry/css-media-hover-samsung.html )
  */
-@mixin hover($extraSelector: null) {
-	@media (hover: hover) {
-		&:hover {
-			@content;
-		}
-	}
+@mixin hoverAdjusted($extraSelector: null, $extraMediaQuery: $extraHoverMediaQuerySelector) {
+  @if $extraMediaQuery {
+    @media (hover: hover) and #{$extraMediaQuery} {
+      &:hover {
+        @content;
+      }
+    }
+  } @else {
+    @media (hover: hover) {
+      &:hover {
+        @content;
+      }
+    }
+  }
 
-	@if $extraSelector {
-		#{$extraSelector} {
-			@content;
-		}
-	}
+  @if $extraSelector {
+    #{$extraSelector} {
+      @content;
+    }
+  }
 }
