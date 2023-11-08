@@ -6,7 +6,7 @@
  * @param $extraSelector:string (optional) = an extra selector that can have the same styles as a hover (for mobile/active state)
  * @param $extraMediaQuery:string (optional) = an extra media query selector that can for example prevent issues on Samsung devices ( https://www.ctrl.blog/entry/css-media-hover-samsung.html )
  */
-@mixin hoverAdjusted($extraSelector: null, $extraMediaQuery: $extraHoverMediaQuerySelector) {
+@mixin hover($extraSelector: null, $extraMediaQuery: $extraHoverMediaQuerySelector) {
   @if $extraMediaQuery {
     @media (hover: hover) and #{$extraMediaQuery} {
       &:hover {
