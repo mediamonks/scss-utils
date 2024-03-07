@@ -32,6 +32,7 @@ npm i -S @mediamonks/scss-utils
 -   [pseudo](./utils/mixin/_pseudo.scss)
 -   [respond-to](./utils/mixin/_respond-to.scss)
 -   [size](./utils/mixin/_size.scss)
+-   [screen-reader-only](./utils/mixin/_screen-reader-only.scss)
 -   [text-ellipsis](./utils/mixin/_text-ellipsis.scss)
 -   [arrow](./utils/mixin/shape/_arrow.scss)
 
