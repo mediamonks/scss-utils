@@ -1,15 +1,17 @@
+@use "sass:map";
+
 /**
  * Respond To (Breakpoint)
  *
  * @param {string} $name - Name of the breakpoint used in $breakpoints
  */
 @function get-media-query($name) {
-  $query: map_get($mediaQueries, $name);
+  $query: map.get($mediaQueries, $name);
   @return "#{$query}";
 }
 
 @mixin respond-to($name) {
-  @if map-has-key($mediaQueries, $name) {
+  @if map.has-key($mediaQueries, $name) {
     @media #{get-media-query($name)} {
       @content;
     }
